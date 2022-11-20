@@ -21,9 +21,8 @@ var (
 
 var rootCmd = &cobra.Command{
 	Use:   "kubectl cronlogs",
-	Short: "Backup utility for PersistentVolumeClaims on kubernetes",
-	Long: `Backup utility for PersistentVolumeClaims on kubernetes,
-Can be used for restoring and creating backups`,
+	Short: "Utility for getting logs of cronjobs",
+	Long:  "Utility for logs of cronjobs",
 	Run: func(cmd *cobra.Command, args []string) {
 		kubeconfig := filepath.Join(homedir.HomeDir(), ".kube", "config")
 
